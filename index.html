@@ -38,11 +38,24 @@
     .donations img { display:block; width:100%; height:auto; margin:.75rem 0 1rem; border-radius:.75rem; }
     .donations a { display:inline-block; padding:.7rem 1rem; border-radius:.65rem; background:#ffb45a; color:#071a30; font-weight:700; text-decoration:none; }
     .donations a:hover { text-decoration:underline; }
-  </style>
+  
+#anuncios { margin: 2.5rem 0; padding: 1.5rem 0; scroll-margin-top: 1rem; }
+#anuncios .anuncios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 265px), 1fr)); gap: 1rem; margin-top: 1.2rem; text-align: left; }
+#anuncios article { min-width: 0; overflow: hidden; border: 1px solid #ffffff38; border-radius: 1rem; background: #0b243c; color: #f5f8ff; }
+#anuncios figure { margin: 0; position: relative; }
+#anuncios img { display: block; width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; }
+#anuncios figcaption { position: absolute; right: .55rem; bottom: .55rem; padding: .25rem .45rem; border-radius: .25rem; color: #fff; background: #081a2e; font-size: .75rem; }
+#anuncios .anuncio-texto { padding: 1rem 1.2rem 1.3rem; }
+#anuncios h2 { margin: 0 0 .5rem; font-size: clamp(1.45rem, 4vw, 2rem); }
+#anuncios h3 { margin: .5rem 0 .8rem; font-size: 1.18rem; }
+#anuncios p { margin: .55rem 0; color: #e1edf7; line-height: 1.5; }
+#anuncios time, #anuncios a { color: #ffd28a; font-weight: 700; }
+#anuncios a { display: inline-block; margin-top: .4rem; text-decoration: underline; text-underline-offset: .22em; }
+</style>
 </head>
 <body>
   <div class="shell">
-    <nav class="top" aria-label="Navegación"><a href="#programas-podcast">Programas y pódcast</a><a href="#fundador">Fundador</a><a href="#donaciones">Donaciones</a><a href="https://calabuigcocinero-collab.github.io/manantial-fm/">Manantial FM</a><a href="https://calabuigcocinero-collab.github.io/Bcngospelchannel/">BCN Gospel Channel</a></nav>
+    <nav class="top" aria-label="Navegación"><a href="#programas-podcast">Programas y pódcast</a><a href="#fundador">Fundador</a><a href="#donaciones">Donaciones</a><a href="https://calabuigcocinero-collab.github.io/manantial-fm/">Manantial FM</a><a href="https://calabuigcocinero-collab.github.io/Bcngospelchannel/">BCN Gospel Channel</a><a href="#anuncios">Anuncios</a></nav>
     <main>
     <section class="hero" aria-label="Horizonte Sonoro Radio">
       <div>
@@ -102,7 +115,43 @@
       <img src="./poster-donaciones.webp" alt="Apoya a Horizonte Sonoro para que podamos traer más música góspel a tu vida" width="1200" height="675" loading="lazy" decoding="async">
       <a href="https://www.paypal.com/ncp/payment/MZACBZ2BEMJSA" target="_blank" rel="noopener noreferrer">Donar con PayPal</a>
     </section>
-    </main>
+    
+<section id="anuncios" aria-labelledby="anuncios-titulo">
+  <h2 id="anuncios-titulo">Anuncios</h2>
+  <p>Agenda evangélica de Barcelona y su área metropolitana</p>
+  <div class="anuncios-grid">
+    <article>
+      <figure>
+        <img src="./anuncios/biblia.webp" alt="Biblia abierta en una sala de reunión" loading="lazy" decoding="async" width="800" height="533">
+        <figcaption>Imagen ilustrativa</figcaption>
+      </figure>
+      <div class="anuncio-texto">
+        <time datetime="2026-12-05">Sábado 5 de diciembre de 2026</time>
+        <h3>Celebración del Nuevo Testamento en lengua de signos catalana</h3>
+        <p>Iglesia Evangélica Unida · Av. de Béjar, 299, Terrassa.</p>
+        <p><strong>Organiza</strong> · Congreso de Sordos Cristianos de España</p>
+        <p>Entrada gratuita.</p>
+        <p><strong>Pendiente de confirmar</strong> · hora de inicio.</p>
+        <a href="https://csce.micrisordos.org/?page_id=1834">Ver anuncio oficial</a>
+      </div>
+    </article>
+    <article>
+      <figure>
+        <img src="./anuncios/oracion.webp" alt="Grupo caminando cerca de las Torres Venecianas de Barcelona" loading="lazy" decoding="async" width="800" height="533">
+        <figcaption>Imagen ilustrativa</figcaption>
+      </figure>
+      <div class="anuncio-texto">
+        <time datetime="2026-12-12T11:00:00+01:00">Sábado 12 de diciembre de 2026 · 11:00</time>
+        <h3>Caminata de oración</h3>
+        <p>Salida desde Plaça d’Espanya, Barcelona.</p>
+        <p><strong>Organiza</strong> · Misión Carismática Internacional Barcelona</p>
+        <p><strong>Pendiente de confirmar</strong> · punto exacto de encuentro dentro de la plaza.</p>
+        <a href="https://mcibarcelona.com/eventos/">Ver anuncio oficial</a>
+      </div>
+    </article>
+  </div>
+</section>
+</main>
     <footer>Música que inspira tu alma.</footer>
   </div>
 </body>
