@@ -1,0 +1,18 @@
+{
+  "id": "./",
+  "name": "Horizonte Sonoro Radio",
+  "short_name": "Horizonte Sonoro",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#071a30",
+  "theme_color": "#071a30",
+  "icons": [
+    {
+      "src": "./logo.webp",
+      "sizes": "any",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ]
+}
